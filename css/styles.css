@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+ .page {
+  color: #000;
+  background-color: #fff;
+
+  height: 100%;
+
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+ }
+
+.page-body {
+  display: flex;
+  flex-direction: column;
+  width: 1600px;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+ ul, li {
+  margin: 0;
+  padding: 0%;
+  list-style: none;
+ }
+
+ .page-header {
+  width: 1600;
+ }
+
+.page-header-logo {
+  display: block;
+}
+
+.navigation {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  gap: 30px;
+ }
+
+.user-navigation {
+  display: flex;
+  align-items: center;
+ }
+
+.search-input {
+  margin: 0;
+  margin-right: auto;
+  width: 359px;
+  height: 40px;
+}
+
+.search-button {
+  margin: 0;
+  margin-right: auto;
+  width: 160px;
+  height: 40px;
+}
+
+.compare-button {
+  margin-left: auto;
+  margin-right: 36px;
+}
+
+.cart-button {
+  display: block;
+  margin-right: 36px;
+}
