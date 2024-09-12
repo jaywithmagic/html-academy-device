@@ -340,7 +340,7 @@ footer {
 
   display: grid;
   grid-template-columns: 240px auto 180px;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
 }
 
