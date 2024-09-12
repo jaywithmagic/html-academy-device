@@ -19,9 +19,16 @@
   src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
   font-display: swap;
 }
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
 img {
   max-width: 100%;
   height: auto;
+
 }
 
 .visually-hidden {
@@ -50,8 +57,10 @@ img {
 .page-body {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   min-height: 100%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -68,6 +77,7 @@ a {
 
  .page-header {
   width: 1040px;
+  margin: 0 auto;
   margin-top: 13px;
   padding: 0 60px;
 
@@ -154,7 +164,7 @@ a {
 
 }
 
-.navigation-list {                           /* нижняя строка меню*/
+.navigation-list {
   display: flex;
   align-items: center;
 }
@@ -186,6 +196,130 @@ a {
 }
 
 
+/* C A T A L O G */
+
+.main-conteiner {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.inner-header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 1160px;
+  padding: 35px 60px;
+  margin: 0 auto;
+}
+
+.inner-header-title {
+  color: #000;
+  background-color: #fff;
+
+  font-family: "Raleway";
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-right: auto;
+}
+
+.braedcrumbs-item:not(:last-child) {
+  margin-right: 36px;
+}
+
+.content {
+  background-color: #f0f0f0;
+}
+
+.inner-content {
+  display: grid;
+  grid-template-columns: 320px 840px;
+  margin: 0 auto;
+  width: 1160px;
+}
+
+.main-content {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 840px;
+
+  background-color: #fff;
+}
+
+.product-header {
+  display: flex;
+  align-items: center;
+
+  width: 840;
+  height: auto;
+  padding: 20px 40px;
+  margin: 0;
+
+  background-color: #f0f0f0;
+}
+
+.sorting-type {
+  margin: 0 auto;
+}
+
+.product-header .button {
+  width: 30px;
+  height: 30px;
+  background-color: #ffe17f;
+  margin-right: 0;
+}
+
+.product-list {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 360px 360px;
+  gap: 44px 40px;
+  margin-top: 70px;
+  margin-bottom: 44px;
+}
+
+.product-item img {
+  padding-bottom: 32px;
+}
+
+.more-button {
+  margin-bottom: 44px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 78px;
+}
+
+.pagination-list {
+  display: flex;
+  justify-content: center;
+}
+
+
+.form-title {
+  color: #000;
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+
+
+
 /* F O O T E R */
 footer {
   color: #fff;
@@ -193,7 +327,7 @@ footer {
   width: 100%;
 }
 
-.page-footer {
+.footer-container {
   font-family: "Rubik";
   font-size: 16px;
   line-height: 20px;
@@ -254,4 +388,11 @@ footer {
 
 .footer-developer {
   justify-self: end;
+}
+
+
+.footer-social-item .button {
+  width: 30px;
+  height: 30px;
+  background-color: #ffe17f;
 }
