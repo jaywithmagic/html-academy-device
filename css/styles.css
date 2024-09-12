@@ -390,9 +390,17 @@ footer {
   justify-self: end;
 }
 
-
-.footer-social-item .button {
-  width: 30px;
-  height: 30px;
+.rectangle {
+  width: 16px;
+  height: 16px;
   background-color: #ffe17f;
+  border: 1px solid black;
+}
+
+.footer-social-item {
+  align-self: center;
+  width: 16px;
+  height: 16px;
+  background-color: #ffe17f;
+  border: 1px solid black;
 }
