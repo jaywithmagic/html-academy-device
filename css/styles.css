@@ -340,6 +340,8 @@ footer {
 
   display: grid;
   grid-template-columns: 240px auto 180px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .footer-logo {
@@ -384,6 +386,7 @@ footer {
 
 .footer-social-list {
   display: flex;
+  justify-content: center;
 }
 
 .footer-developer {
@@ -398,9 +401,10 @@ footer {
 }
 
 .footer-social-item {
-  align-self: center;
   width: 16px;
   height: 16px;
   background-color: #ffe17f;
   border: 1px solid black;
+  justify-self: center;
+  align-self: center;
 }
