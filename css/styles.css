@@ -92,7 +92,7 @@ a {
   margin-top: 4px;
 }
 
-/* МЕНЮ ПОЛЬЗОВАТЕЛЯA*/
+/* МЕНЮ ПОЛЬЗОВАТЕЛЯ */
 
 .user-navigation {
   display: flex;
@@ -544,4 +544,283 @@ footer {
   border: 1px solid black;
   justify-self: center;
   align-self: center;
+}
+
+/* Г Л А В Н А Я*/
+.main-index {
+  box-sizing: border-box;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+}
+
+/* Горизонтальные категории каталога */
+
+.catalog-category {
+  box-sizing: border-box;
+  width: 1160px;
+}
+
+.category-list {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.category-link {
+  box-sizing: border-box;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+}
+
+.category-icon {
+  display: flex;
+  width: 160px;
+  height: 160px;
+  background-color: #ffe17f;
+}
+
+.category-icon svg {
+  margin: auto;
+}
+
+.category-list li:nth-child(2) svg {
+  margin-bottom: 0;
+}
+
+.category-link h3 {
+  display: block;
+  padding: 0;
+  margin-top: 32px;
+  margin-bottom: 0;
+  width: 160px;
+  height: 60px;
+
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: -0.04em;
+}
+
+/* Сервисы Доставка/Гарантия/Кредит */
+
+.services {
+  width: 100%;
+  background-color: #f0f0f0;
+  box-shadow: 0 102px 0 0 #fff inset;
+}
+
+.services-wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  margin-bottom: 72px;
+  display: flex;
+}
+
+/* Информация */
+
+.cervices-info {
+  width: 729px;
+  margin-left: 116px;
+  margin-right: 63px;
+  margin-top: 72px;
+  background: url(../images/delivery-man.png) top right no-repeat;
+}
+
+.cervices-info h2 {
+  font-family: "Raleway";
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 800;
+
+  margin: 0;
+  margin-bottom: 34px;
+}
+
+.cervices-info p {
+  font-family: "Rubik";
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/* Список */
+
+.services-list {
+  display: block;
+  padding-top: 64px;
+  border-right: solid 8px #000;
+}
+
+.cervices-item {
+ width: 280px;
+ height: 40px;
+ margin-bottom: 35px;
+ box-sizing: border-box;
+ position: relative;
+}
+
+.cervices-item:last-child {
+  margin-bottom: 65px;
+}
+
+.cervices-item.active {
+  color: #ffe17f;
+  background-color: #000;
+}
+
+.cervices-link:not(.active) {
+  background-image: linear-gradient(transparent 40%,#ffe17f 40%,#ffe17f 60%, transparent 60%);
+}
+
+.cervices-link {
+  font-family: "Raleway";
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+  text-transform: uppercase;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 40px;
+  width: 160px;
+  margin-bottom: 35px;
+}
+
+.cervices-link.active {
+  color: #ffe17f;
+  background-color: #000;
+}
+
+/* Кнопка доставки */
+
+.delivery-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 1160px;
+  height: 100px;
+
+  font-family: "Raleway";
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+  text-transform: uppercase;
+
+  background: #f0f0f0 url(../images/delivery-car.png) left no-repeat;
+}
+
+.delivery-button::after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 42px;
+  top: 30px;
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(220, 220, 220, 0.5) url(../images/info.svg) center no-repeat;
+}
+
+/* Блок с информацией */
+
+.info {
+  width: 1160px;
+  display: grid;
+  grid-template-columns: 520px 532px;
+  justify-content: space-between;
+}
+
+.about h2 {
+  font-family: "Raleway";
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 800;
+
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 48px;
+  padding-top: 48px;
+}
+
+.about::before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 84px;
+  height: 7px;
+  background-color: #000;
+}
+
+.about h3 {
+  font-family: "Rubik";
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+
+  background-color: #fff;
+  color: #686868;
+
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.about p {
+  font-family: "Rubik";
+  font-size: 18px;
+  line-height: 30px;
+
+  color: #686868;
+  background-color: #fff;
+
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.about .button {
+  background-image: linear-gradient(transparent 40%,#ffe17f 40%,#ffe17f 60%, transparent 60%);
+
+  font-family: "Raleway";
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+  text-transform: uppercase;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 40px;
+}
+
+.about-more-button {
+  width: 270px;
+}
+
+.about-subscribe-button {
+  width: 260px;
+}
+
+.address, .phone {
+  font-family: "Rubik";
+  font-size: 18px;
+  line-height: 30px;
+  font-style: normal;
+
+  color: #686868;
+  background-color: #fff;
+}
+
+.phone {
+  display: inline-block;
+  margin-bottom: 30px;
 }
